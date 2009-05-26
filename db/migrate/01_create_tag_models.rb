@@ -4,7 +4,8 @@ class CreateTagModels < ActiveRecord::Migration
       # Needed by acts_as_category
       t.integer :parent_id, :position, :children_count, :ancestors_count, :descendants_count
       t.boolean :hidden
-      # Optional by acts_as_category
+
+
       t.string :name, :description
       t.timestamps
     end

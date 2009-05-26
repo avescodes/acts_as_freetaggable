@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+root:
+  id: 1
+  name: Root
+  description: A root tag
+
+second:
+  id: 2
+  name: tag 1.1
+  description: second level, first tag.
+  parent_id: 1
+
+third:
+  id: 3
+  name: tag 1.2
+  description: second level, second tag.
+  parent_id: 1
+
+anotherroot:
+  id: 4
+  name: Another Root
+  description: Another root tag
+
+fourth:
+  id: 5
+  name: tag 2.1
+  description: second level, first tag.
+  parent_id: 4
+
+third:
+  id: 6
+  name: tag 2.2
+  description: second level, second tag.
+  parent_id: 4
