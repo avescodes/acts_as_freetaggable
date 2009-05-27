@@ -6,7 +6,7 @@ class CreateTagModels < ActiveRecord::Migration
       t.boolean :hidden
 
 
-      t.string :name, :description
+      t.string :title, :description
       t.timestamps
     end
     

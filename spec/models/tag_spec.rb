@@ -9,22 +9,33 @@ end
 describe Tag do
   fixtures :tags
 
-  specify { Tag.should have_many :taggings}
+  context "model" do
+    specify { Tag.should have_many :taggings}
 
-  # These 2 show has_many_polymorphs works with seperate declarations
-  specify { Tag.should have_many :contacts }
-  specify { Tag.should have_many :comments }
-
-  # should "act as list" do
-  #   assert_respond_to @tag, :move_higher
-  # end
+    # These 2 show has_many_polymorphs works with seperate declarations
+    specify { Tag.should have_many :contacts }
+    specify { Tag.should have_many :comments }
+  end
   
-  context "ordering" do
+  context "instance" do
+    it "should be able to give hierarchical title" do
+      @tag_one.hierarchical_title.should == "Root -> tag 1.1"
+    end
+  end
+  
+  context "via association" do
+    it "should be able to have tagged objects"
+    it "should destroy properly through tagged objects"
+    it "should still exist after tagged object is destroyed"
+  end
+  
+  context "ordering" do 
     it "can reorder tags"
     it "{ should respond_to :move_up }"
     it "{ should respond_to :move_down }"
+    it "should be maintained through a mass assignment"
   end
-  
+
   context "tree" do
     subject { Tag }
     specify { Tag.should respond_to :roots }
@@ -39,17 +50,13 @@ describe Tag do
       lambda { Tag.find grand_child_id }.should raise_error
     end
     it "should be capable of mass child reassignment" do
-      pending "when I find out why << works in script/console but not specs"
+      @root.save
       root2_count = @root2.children.count
       root1_count = @root.children.count
-      puts @root, @root2.children
-      (@root.children << @root2.children).should be true
-      puts @root
+      assert @root.children << @root2.children #don't put me in a lambda
       @root.should be_valid
       @root.save; @root.reload
       @root.children.count.should be root1_count + root2_count
-      #   t2.reload
-      #   assert (t2.children.length == tccount + t2ccount)
     end
     it "node 'root' has 2 children" do
       @root.children.count.should be 2
@@ -113,6 +120,8 @@ describe Tag do
   
   
 end
+# Yet to be implemented from Cohort tag_test.rb
+#==============================================
 # context "Tags" do
 #   
 #   context "with contacts" do
@@ -142,16 +151,4 @@ end
 #       assert @contact.destroy
 #     end
 #   end
-# end
-# 
-# should "can mass reassign children" do
-#   t = Tag.find 4
-#   children = t.children
-#   tccount = children.length
-#   t2 = Tag.find 1
-#   t2ccount = t2.children.length
-#   assert t2.children << children
-#   assert t2.save
-#   t2.reload
-#   assert (t2.children.length == tccount + t2ccount)
 # end

@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20090526183152) do
     t.integer  "ancestors_count"
     t.integer  "descendants_count"
     t.boolean  "hidden"
-    t.string   "name"
+    t.string   "title"
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"

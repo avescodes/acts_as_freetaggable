@@ -14,34 +14,41 @@
 #
 
 root:
-  name: Root
+  title: Root
+  position: 1
   description: A root tag
 
 tag_one:
-  name: tag 1.1
+  title: tag 1.1
+  position: 1
   description: second level, first tag.
   parent: root
 
 tag_two:
-  name: tag 1.2
+  title: tag 1.2
+  position: 2
   description: second level, second tag.
   parent: root
   
 tag_two_one:
-  name: tag 1.2.1
+  title: tag 1.2.1
+  position: 1
   description: third level, third tag.
   parent: tag_two
 
 root2:
-  name: Another Root
+  title: Another Root
+  position: 2
   description: Another root tag
 
 tag_three:
-  name: tag 2.1
+  title: tag 2.1
+  position: 1
   description: second level, first tag.
   parent: root2
 
 tag_four:
-  name: tag 2.2
+  title: tag 2.2
+  position: 2
   description: second level, second tag.
   parent: root2
