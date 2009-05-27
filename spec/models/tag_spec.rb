@@ -21,7 +21,10 @@ describe Tag do
   
   context "ordering" do
     it "can reorder tags"
+    it "{ should respond_to :move_up }"
+    it "{ should respond_to :move_down }"
   end
+  
   context "tree" do
     subject { Tag }
     specify { Tag.should respond_to :roots }
@@ -38,10 +41,18 @@ describe Tag do
     it "node 'root' has 2 children" do
       @root.children.count.should be 2
     end
-    it "node 'root' has 3 descendants"
-    it "node 'one's parent is  node 'root'"
-    it "node 'one' has 1 sibling"
-    it "node 'two_one' has 2 ancestors"
+    it "node 'root' has 3 descendants" do
+      @root.descendants.count.should be 3
+    end
+    it "node 'tag_one's parent is  node 'root'" do
+      @tag_one.parent.should == @root
+    end
+    it "node 'tag_one' has 1 sibling" do
+      @tag_one.siblings.count.should be 1
+    end
+    it "node 'tag_two_one' has 2 ancestors" do
+      @tag_two_one.ancestors.count.should be 2
+    end
 
   end
   

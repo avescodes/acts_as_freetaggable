@@ -4,45 +4,44 @@
 #===============
 #
 # - root
-#     \---one
-#      \--two
-#           \--two_one
+#     \---tag_tag_one
+#      \--tag_two
+#           \--tag_two_one
 #
 # - root2
-#     \---three
-#      \--four
+#     \---tag_three
+#      \--tag_four
 #
 
 root:
-  id: 1
   name: Root
   description: A root tag
 
-one:
-  id: 2
+tag_one:
   name: tag 1.1
   description: second level, first tag.
-  parent_id: 1
+  parent: root
 
-two:
-  id: 3
+tag_two:
   name: tag 1.2
   description: second level, second tag.
-  parent_id: 1
+  parent: root
+  
+tag_two_one:
+  name: tag 1.2.1
+  description: third level, third tag.
+  parent: tag_two
 
 root2:
-  id: 4
   name: Another Root
   description: Another root tag
 
-three:
-  id: 5
+tag_three:
   name: tag 2.1
   description: second level, first tag.
-  parent_id: 4
+  parent: root2
 
-four:
-  id: 6
+tag_four:
   name: tag 2.2
   description: second level, second tag.
-  parent_id: 4
+  parent: root2
