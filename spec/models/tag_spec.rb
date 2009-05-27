@@ -37,7 +37,20 @@ describe Tag do
       parent.destroy
       lambda { Tag.find child_id }.should raise_error
       lambda { Tag.find grand_child_id }.should raise_error
-    end    
+    end
+    it "should be capable of mass child reassignment" do
+      pending "when I find out why << works in script/console but not specs"
+      root2_count = @root2.children.count
+      root1_count = @root.children.count
+      puts @root, @root2.children
+      (@root.children << @root2.children).should be true
+      puts @root
+      @root.should be_valid
+      @root.save; @root.reload
+      @root.children.count.should be root1_count + root2_count
+      #   t2.reload
+      #   assert (t2.children.length == tccount + t2ccount)
+    end
     it "node 'root' has 2 children" do
       @root.children.count.should be 2
     end
@@ -53,7 +66,6 @@ describe Tag do
     it "node 'tag_two_one' has 2 ancestors" do
       @tag_two_one.ancestors.count.should be 2
     end
-
   end
   
   context "tree node" do
@@ -64,12 +76,26 @@ describe Tag do
     it { should respond_to :children }
     it { should respond_to :descendants }
     it { should respond_to :parent }
+    it { should respond_to :parent= }
     it { should respond_to :ancestors }
     it "cannot be its own parent" do
       @tag.parent = @tag
       @tag.should_not be_valid
     end
-    it "will be valid when #new'd and assigned own parent" do
+    it "can change parent" do
+      @tag2 = Tag.create
+      lambda { @tag.parent = @tag2 }.should_not raise_error
+      @tag.parent.should == @tag2
+    end
+    it "can leave its parent and become root" do
+      @tag2 = Tag.create
+      @tag.parent = @tag2
+      @tag.parent = nil
+      @tag.save
+      @tag.parent.should be nil
+      Tag.roots.should include @tag
+    end
+    it "will be valid when #new'd and assigned own parent (but not yet saved)" do
       # Bug or feature? Can't assign parent properly unless id created
       @tag = Tag.new
       @tag.parent = @tag
@@ -116,37 +142,6 @@ end
 #       assert @contact.destroy
 #     end
 #   end
-# end
-# 
-# should "can reorder tags" do
-#   t = Tag.find 5
-#   assert t.position == 1
-#   assert t.move_lower
-#   t.reload
-#   assert t.position == 2
-# end
-# 
-# should "tag has children" do
-#   t = Tag.find 4
-#   assert t.children.length == 2
-# end
-# 
-# should "can reassign parent" do
-#   t = Tag.find 5
-#   tparent = Tag.find 1
-#   t.parent = tparent
-#   assert t.save
-#   t.reload
-#   tparent.reload
-#   assert tparent.children.find(t)
-# end
-# 
-# should "can orphan tag" do
-#   t = Tag.find 5
-#   t.parent = nil
-#   assert t.save
-#   t.reload
-#   assert t.parent == nil
 # end
 # 
 # should "can mass reassign children" do
