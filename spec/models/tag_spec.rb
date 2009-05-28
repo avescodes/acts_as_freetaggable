@@ -16,20 +16,20 @@ describe Tag do
     specify { Tag.should have_many :contacts }
     specify { Tag.should have_many :comments }
   end
-  
+
   context "instance" do
     it "should be able to give hierarchical title" do
       @tag_one.hierarchical_title.should == "Root -> tag 1.1"
     end
   end
-  
+
   context "via association" do
     it "should be able to have tagged objects"
     it "should destroy properly through tagged objects"
     it "should still exist after tagged object is destroyed"
   end
-  
-  context "ordering" do 
+
+  context "ordering" do
     it "can reorder tags"
     it "{ should respond_to :move_up }"
     it "{ should respond_to :move_down }"
@@ -39,7 +39,7 @@ describe Tag do
   context "tree" do
     subject { Tag }
     specify { Tag.should respond_to :roots }
-    
+
     it "should tidy up orphaned objects" do
       # Note #delete does _NOT_ trigger children deletion
       parent = Tag.create!
@@ -74,7 +74,7 @@ describe Tag do
       @tag_two_one.ancestors.count.should be 2
     end
   end
-  
+
   context "tree node" do
     before(:each) do
       @tag = Tag.create
@@ -108,22 +108,22 @@ describe Tag do
       @tag.parent = @tag
       @tag.should be_valid
     end
-    it "should not allow destruction if unremovable" do    
+    it "should not allow destruction if unremovable" do
       @tag.removable = false
       @tag.destroy.should be false
     end
   end
-  
+
   describe "validations" do
-    
+
   end
-  
-  
+
+
 end
 # Yet to be implemented from Cohort tag_test.rb
 #==============================================
 # context "Tags" do
-#   
+#
 #   context "with contacts" do
 #     setup do
 #       @contact = get_a_contact
@@ -134,7 +134,7 @@ end
 #       assert @contact.save
 #       assert @contact.tags.count == 1
 #     end
-# 
+#
 #     should "be able to delete tag" do
 #       @contact.tags = [@tag]
 #       @contact.save
@@ -143,7 +143,7 @@ end
 #       @contact.reload
 #       assert @contact.tags.length == 0
 #     end
-# 
+#
 #     should "can delete a contact with a tag" do
 #       @contact.tags = [@tag]
 #       @contact.save

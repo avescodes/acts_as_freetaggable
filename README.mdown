@@ -52,4 +52,12 @@ After you know the server will actually run you can run the tests with
 
     spec spec -O spec/spec.opts
 
-I make every attempt to leave every commit passing or pending all tests. Failure is not permitted. As a result if you encounter any errors after a fresh <tt>git pull</tt> then please message me or log an issue in the [github issue tracker](http://github.com/rkneufeld/acts_as_freetaggable/issues "Acts as Freetaggable - Issue Tracker") for the project
+I make every attempt to leave every commit passing or pending all tests. Failure is not permitted. As a result if you encounter any errors after a fresh <tt>git pull</tt> then please message me or log an issue in the [github issue tracker](http://github.com/rkneufeld/acts_as_freetaggable/issues "Acts as Freetaggable - Issue Tracker") for the project. Additional details can be gleaned from <tt>spec --help</tt>, particularly the details on the format code (<tt>-f (l|p|o|s|n|h|g)</tt>) which provide different ways of viewing spec output. 
+
+If you are actively developing the plugin you can have tests run automatically with the command (and you have the ZenTest gem)
+
+    script/autospec
+
+Database
+-------
+Since certain Rails methods ( <tt>#delete</tt> ) ignore <tt>before_destroy</tt> -- and for further stability -- we are working on some stored procedures at the DB level to ensure the integrity of the Tag tree. We're starting with postgreSQL triggers, and will work on MySQL triggers in the near future.
