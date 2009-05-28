@@ -31,8 +31,17 @@ describe Tag do
 
   context "ordering" do
     it "can reorder tags"
-    it "{ should respond_to :move_up }"
-    it "{ should respond_to :move_down }"
+
+    it { should respond_to :move_up }
+    it "should change ordering of tags when non-top tag is moved up" do
+      ids = @root.children.map(&:id)
+      lambda {
+        @root.children[1].move_up
+      }.should change(@root.children, :second, :id).to(id[0])
+     end
+    it "should not change ordering of tags when top tag is moved up"
+
+    it { should respond_to :move_down }
     it "should be maintained through a mass assignment"
   end
 
