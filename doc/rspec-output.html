@@ -181,37 +181,137 @@ a {
 <div class="results">
 <div class="example_group">
   <dl>
-  <dt id="example_group_1">Tag associated object</dt>
-    <script type="text/javascript">moveProgressBar('12.5');</script>
-    <dd class="spec passed"><span class="passed_spec_name">should respond to #tags</span></dd>
-    <script type="text/javascript">moveProgressBar('25.0');</script>
-    <dd class="spec passed"><span class="passed_spec_name">should be able to have tags</span></dd>
-    <script type="text/javascript">moveProgressBar('37.5');</script>
-    <dd class="spec passed"><span class="passed_spec_name">should update when a tag is destroyed</span></dd>
+  <dt id="example_group_1">Tag db triggers</dt>
+    <script type="text/javascript">makeYellow('rspec-header');</script>
+    <script type="text/javascript">makeYellow('example_group_1');</script>
+    <script type="text/javascript">moveProgressBar('2.3');</script>
+    <dd class="spec not_implemented"><span class="not_implemented_spec_name">should still delete children when deleted (PENDING: db triggers need to get created)</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_2">Tag ordering#move_down</dt>
+    <script type="text/javascript">moveProgressBar('4.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should change position of non-bottom tag when moved down</span></dd>
+    <script type="text/javascript">moveProgressBar('7.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should change position of displaced tag when non-bottom tag is moved down</span></dd>
+    <script type="text/javascript">moveProgressBar('9.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not move the top tag</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_3">Tag ordering#move_up</dt>
+    <script type="text/javascript">moveProgressBar('11.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should change position of non-top tag</span></dd>
+    <script type="text/javascript">moveProgressBar('14.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should change position of tag above</span></dd>
+    <script type="text/javascript">moveProgressBar('16.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not move the top tag</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_4">Tag ordering</dt>
+    <script type="text/javascript">moveProgressBar('19.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should order roots by position</span></dd>
+    <script type="text/javascript">moveProgressBar('21.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should order children by position</span></dd>
+    <script type="text/javascript">moveProgressBar('23.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should order siblings by position</span></dd>
+    <script type="text/javascript">moveProgressBar('26.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">can reorder tags</span></dd>
+    <script type="text/javascript">moveProgressBar('28.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">can reorder root tags</span></dd>
+    <script type="text/javascript">moveProgressBar('30.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">shouldn't move a tag with no siblings</span></dd>
+    <script type="text/javascript">moveProgressBar('33.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should respond to #move_up</span></dd>
+    <script type="text/javascript">moveProgressBar('35.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should respond to #move_down</span></dd>
+    <script type="text/javascript">moveProgressBar('38.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be maintained through a mass assignment</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_5">Tag tree node</dt>
+    <script type="text/javascript">moveProgressBar('40.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should respond to #children</span></dd>
+    <script type="text/javascript">moveProgressBar('42.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should respond to #descendants</span></dd>
+    <script type="text/javascript">moveProgressBar('45.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should respond to #parent</span></dd>
+    <script type="text/javascript">moveProgressBar('47.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should respond to #parent=</span></dd>
     <script type="text/javascript">moveProgressBar('50.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should respond to #ancestors</span></dd>
+    <script type="text/javascript">moveProgressBar('52.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">cannot be its own parent</span></dd>
+    <script type="text/javascript">moveProgressBar('54.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">can change parent</span></dd>
+    <script type="text/javascript">moveProgressBar('57.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">can leave its parent and become root</span></dd>
+    <script type="text/javascript">moveProgressBar('59.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">will be valid when #new'd and assigned own parent (but not yet saved)</span></dd>
+    <script type="text/javascript">moveProgressBar('61.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not allow destruction if unremovable</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_6">Tag tree</dt>
+    <script type="text/javascript">moveProgressBar('64.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should respond to #roots</span></dd>
+    <script type="text/javascript">moveProgressBar('66.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should tidy up orphaned objects</span></dd>
+    <script type="text/javascript">moveProgressBar('69.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be capable of mass child reassignment</span></dd>
+    <script type="text/javascript">moveProgressBar('71.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">node 'root' has 2 children</span></dd>
+    <script type="text/javascript">moveProgressBar('73.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">node 'root' has 3 descendants</span></dd>
+    <script type="text/javascript">moveProgressBar('76.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">node 'tag_one's parent is  node 'root'</span></dd>
+    <script type="text/javascript">moveProgressBar('78.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">node 'tag_one' has 1 sibling</span></dd>
+    <script type="text/javascript">moveProgressBar('80.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">node 'tag_two_one' has 2 ancestors</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_7">Tag associated object</dt>
+    <script type="text/javascript">moveProgressBar('83.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should respond to #tags</span></dd>
+    <script type="text/javascript">moveProgressBar('85.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to have tags</span></dd>
+    <script type="text/javascript">moveProgressBar('88.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should update when a tag is destroyed</span></dd>
+    <script type="text/javascript">moveProgressBar('90.4');</script>
     <dd class="spec passed"><span class="passed_spec_name">should leave tag intact after themselves being destroyed</span></dd>
   </dl>
 </div>
 <div class="example_group">
   <dl>
-  <dt id="example_group_2">Tag instance</dt>
-    <script type="text/javascript">moveProgressBar('62.5');</script>
+  <dt id="example_group_8">Tag instance</dt>
+    <script type="text/javascript">moveProgressBar('92.8');</script>
     <dd class="spec passed"><span class="passed_spec_name">should be able to give hierarchical title</span></dd>
   </dl>
 </div>
 <div class="example_group">
   <dl>
-  <dt id="example_group_3">Tag model</dt>
-    <script type="text/javascript">moveProgressBar('75.0');</script>
+  <dt id="example_group_9">Tag model</dt>
+    <script type="text/javascript">moveProgressBar('95.2');</script>
     <dd class="spec passed"><span class="passed_spec_name">should have many taggings</span></dd>
-    <script type="text/javascript">moveProgressBar('87.5');</script>
+    <script type="text/javascript">moveProgressBar('97.6');</script>
     <dd class="spec passed"><span class="passed_spec_name">should have many contacts</span></dd>
     <script type="text/javascript">moveProgressBar('100.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">should have many comments</span></dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.187524 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "8 examples, 0 failures";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>1.155714 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "42 examples, 0 failures, 1 pending";</script>
 </div>
 </div>
 </body>
