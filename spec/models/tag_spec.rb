@@ -30,6 +30,7 @@ describe Tag do
   end
 
   context "ordering" do
+    #Through all the stuff I did I found that ordering requires #reloads to truly work as expected. Without them orderings don't come through properly
     it "should order roots by position" do
       root_positions = Tag.roots.map(&:position)
       lambda { root_positions.sort }.should_not change(root_positions, :first)
