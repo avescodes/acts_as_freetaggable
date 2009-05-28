@@ -24,9 +24,20 @@ class Tag < ActiveRecord::Base
   end
 
   def move_up
+    if self.position > 1 # We can't move something up if its at the top!
+      tag_above = self.siblings.reject { |tag| tag.position != self.position - 1}[0]
+      self.position, tag_above.position = tag_above.position, self.position
+      [self,tag_above].each(&:save)
+    end
   end
 
   def move_down
+    if self.position < self.siblings.last.position
+      tag_below = self.siblings.reject { |tag| tag.position != self.position + 1}[0]
+      self.position, tag_below.position = tag_below.position, self.position
+      [self,tag_below].each(&:save)
+      return true
+    end
   end
 
   private

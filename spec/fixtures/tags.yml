@@ -10,7 +10,6 @@
 #
 # - root2
 #     \---tag_three
-#      \--tag_four
 #
 
 root:
@@ -45,10 +44,4 @@ tag_three:
   title: tag 2.1
   position: 1
   description: second level, first tag.
-  parent: root2
-
-tag_four:
-  title: tag 2.2
-  position: 2
-  description: second level, second tag.
   parent: root2

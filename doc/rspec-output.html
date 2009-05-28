@@ -182,117 +182,121 @@ a {
 <div class="example_group">
   <dl>
   <dt id="example_group_1">Tag tree node</dt>
-    <script type="text/javascript">moveProgressBar('3.2');</script>
+    <script type="text/javascript">moveProgressBar('2.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">should respond to #children</span></dd>
-    <script type="text/javascript">moveProgressBar('6.4');</script>
+    <script type="text/javascript">moveProgressBar('5.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">should respond to #descendants</span></dd>
-    <script type="text/javascript">moveProgressBar('9.6');</script>
+    <script type="text/javascript">moveProgressBar('7.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">should respond to #parent</span></dd>
-    <script type="text/javascript">moveProgressBar('12.9');</script>
+    <script type="text/javascript">moveProgressBar('10.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">should respond to #parent=</span></dd>
-    <script type="text/javascript">moveProgressBar('16.1');</script>
+    <script type="text/javascript">moveProgressBar('12.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">should respond to #ancestors</span></dd>
-    <script type="text/javascript">moveProgressBar('19.3');</script>
+    <script type="text/javascript">moveProgressBar('15.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">cannot be its own parent</span></dd>
-    <script type="text/javascript">moveProgressBar('22.5');</script>
+    <script type="text/javascript">moveProgressBar('17.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">can change parent</span></dd>
-    <script type="text/javascript">moveProgressBar('25.8');</script>
+    <script type="text/javascript">moveProgressBar('20.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">can leave its parent and become root</span></dd>
-    <script type="text/javascript">moveProgressBar('29.0');</script>
+    <script type="text/javascript">moveProgressBar('22.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">will be valid when #new'd and assigned own parent (but not yet saved)</span></dd>
-    <script type="text/javascript">moveProgressBar('32.2');</script>
+    <script type="text/javascript">moveProgressBar('25.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">should not allow destruction if unremovable</span></dd>
   </dl>
 </div>
 <div class="example_group">
   <dl>
   <dt id="example_group_2">Tag tree</dt>
-    <script type="text/javascript">moveProgressBar('35.4');</script>
+    <script type="text/javascript">moveProgressBar('27.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">should respond to #roots</span></dd>
-    <script type="text/javascript">moveProgressBar('38.7');</script>
+    <script type="text/javascript">moveProgressBar('30.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">should tidy up orphaned objects</span></dd>
-    <script type="text/javascript">moveProgressBar('41.9');</script>
+    <script type="text/javascript">moveProgressBar('32.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">should be capable of mass child reassignment</span></dd>
-    <script type="text/javascript">moveProgressBar('45.1');</script>
+    <script type="text/javascript">moveProgressBar('35.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">node 'root' has 2 children</span></dd>
-    <script type="text/javascript">moveProgressBar('48.3');</script>
+    <script type="text/javascript">moveProgressBar('37.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">node 'root' has 3 descendants</span></dd>
-    <script type="text/javascript">moveProgressBar('51.6');</script>
+    <script type="text/javascript">moveProgressBar('40.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">node 'tag_one's parent is  node 'root'</span></dd>
-    <script type="text/javascript">moveProgressBar('54.8');</script>
+    <script type="text/javascript">moveProgressBar('42.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">node 'tag_one' has 1 sibling</span></dd>
-    <script type="text/javascript">moveProgressBar('58.0');</script>
+    <script type="text/javascript">moveProgressBar('45.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">node 'tag_two_one' has 2 ancestors</span></dd>
   </dl>
 </div>
 <div class="example_group">
   <dl>
   <dt id="example_group_3">Tag ordering</dt>
-    <script type="text/javascript">makeYellow('rspec-header');</script>
-    <script type="text/javascript">makeYellow('example_group_3');</script>
-    <script type="text/javascript">moveProgressBar('61.2');</script>
-    <dd class="spec not_implemented"><span class="not_implemented_spec_name">can reorder tags (PENDING: Not Yet Implemented)</span></dd>
-    <script type="text/javascript">moveProgressBar('64.5');</script>
+    <script type="text/javascript">moveProgressBar('47.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should order roots by position</span></dd>
+    <script type="text/javascript">moveProgressBar('50.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should order children by position</span></dd>
+    <script type="text/javascript">moveProgressBar('52.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should order siblings by position</span></dd>
+    <script type="text/javascript">moveProgressBar('55.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">can reorder tags</span></dd>
+    <script type="text/javascript">moveProgressBar('57.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">can reorder root tags</span></dd>
+    <script type="text/javascript">moveProgressBar('60.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">shouldn't move a tag with no siblings</span></dd>
+    <script type="text/javascript">moveProgressBar('62.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">should respond to #move_up</span></dd>
-    <script type="text/javascript">makeRed('rspec-header');</script>
-    <script type="text/javascript">makeRed('example_group_3');</script>
-    <script type="text/javascript">moveProgressBar('67.7');</script>
-    <dd class="spec failed">
-      <span class="failed_spec_name">should change ordering of tags when non-top tag is moved up</span>
-      <div class="failure" id="failure_1">
-        <div class="message"><pre>wrong number of arguments (3 for 2)</pre></div>
-        <div class="backtrace"><pre>./spec/models/tag_spec.rb:40:in `change'
-./spec/models/tag_spec.rb:40:</pre></div>
-    <pre class="ruby"><code><span class="linenum">38</span>      lambda {
-<span class="linenum">39</span>        @root.children[1].move_up
-<span class="offending"><span class="linenum">40</span>      }.should change(@root.children, :second, :id).to(id[0])</span>
-<span class="linenum">41</span>     end
-<span class="linenum">42</span>    it "should not change ordering of tags when top tag is moved up"
-<span class="linenum">43</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
-      </div>
-    </dd>
-    <script type="text/javascript">moveProgressBar('70.9');</script>
-    <dd class="spec not_implemented"><span class="not_implemented_spec_name">should not change ordering of tags when top tag is moved up (PENDING: Not Yet Implemented)</span></dd>
-    <script type="text/javascript">moveProgressBar('74.1');</script>
+    <script type="text/javascript">moveProgressBar('65.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should change position of non-top tag when moved up</span></dd>
+    <script type="text/javascript">moveProgressBar('67.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should change position of displaced tag when non-top tag is moved up</span></dd>
+    <script type="text/javascript">moveProgressBar('70.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not move the top tag</span></dd>
+    <script type="text/javascript">moveProgressBar('72.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">should respond to #move_down</span></dd>
-    <script type="text/javascript">moveProgressBar('77.4');</script>
-    <dd class="spec not_implemented"><span class="not_implemented_spec_name">should be maintained through a mass assignment (PENDING: Not Yet Implemented)</span></dd>
+    <script type="text/javascript">moveProgressBar('75.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should change position of non-bottom tag when moved down</span></dd>
+    <script type="text/javascript">moveProgressBar('77.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should change position of displaced tag when non-bottom tag is moved down</span></dd>
+    <script type="text/javascript">moveProgressBar('80.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not move the top tag</span></dd>
+    <script type="text/javascript">moveProgressBar('82.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be maintained through a mass assignment</span></dd>
   </dl>
 </div>
 <div class="example_group">
   <dl>
   <dt id="example_group_4">Tag via association</dt>
+    <script type="text/javascript">makeYellow('rspec-header');</script>
     <script type="text/javascript">makeYellow('example_group_4');</script>
-    <script type="text/javascript">moveProgressBar('80.6');</script>
+    <script type="text/javascript">moveProgressBar('85.0');</script>
     <dd class="spec not_implemented"><span class="not_implemented_spec_name">should be able to have tagged objects (PENDING: Not Yet Implemented)</span></dd>
+    <script type="text/javascript">makeYellow('rspec-header');</script>
     <script type="text/javascript">makeYellow('example_group_4');</script>
-    <script type="text/javascript">moveProgressBar('83.8');</script>
+    <script type="text/javascript">moveProgressBar('87.5');</script>
     <dd class="spec not_implemented"><span class="not_implemented_spec_name">should destroy properly through tagged objects (PENDING: Not Yet Implemented)</span></dd>
+    <script type="text/javascript">makeYellow('rspec-header');</script>
     <script type="text/javascript">makeYellow('example_group_4');</script>
-    <script type="text/javascript">moveProgressBar('87.0');</script>
+    <script type="text/javascript">moveProgressBar('90.0');</script>
     <dd class="spec not_implemented"><span class="not_implemented_spec_name">should still exist after tagged object is destroyed (PENDING: Not Yet Implemented)</span></dd>
   </dl>
 </div>
 <div class="example_group">
   <dl>
   <dt id="example_group_5">Tag instance</dt>
-    <script type="text/javascript">moveProgressBar('90.3');</script>
+    <script type="text/javascript">moveProgressBar('92.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">should be able to give hierarchical title</span></dd>
   </dl>
 </div>
 <div class="example_group">
   <dl>
   <dt id="example_group_6">Tag model</dt>
-    <script type="text/javascript">moveProgressBar('93.5');</script>
+    <script type="text/javascript">moveProgressBar('95.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">should have many taggings</span></dd>
-    <script type="text/javascript">moveProgressBar('96.7');</script>
+    <script type="text/javascript">moveProgressBar('97.5');</script>
     <dd class="spec passed"><span class="passed_spec_name">should have many contacts</span></dd>
     <script type="text/javascript">moveProgressBar('100.0');</script>
     <dd class="spec passed"><span class="passed_spec_name">should have many comments</span></dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.745864 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "31 examples, 1 failure, 6 pending";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.997538 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "40 examples, 0 failures, 3 pending";</script>
 </div>
 </div>
 </body>
