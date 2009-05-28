@@ -6,7 +6,7 @@ Still in development, please don't use unless you are helping to develop the plu
 
 Acts as Freetaggable (AaF) aims to provide tagging to the models it decorates in a way unlike other tagging plugins provide. Where normal tagging plugins provide tagging in a flat model AaF provides tagging based on a hierarchical model. Take myself as an example:
 
-I belong in the Berkman Institutes hierarchy as an Intern, in a flat model I might be tagged as follows:
+I belong in the Berkman Center hierarchy as an Intern, in a flat model I might be tagged as follows:
 
     (Berkman) (Intern)
 
