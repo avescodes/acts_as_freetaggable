@@ -26,3 +26,54 @@ class Tag < ActiveRecord::Base
   private
   
 end
+# 
+# class Tag < ActiveRecord::Base
+#   include CohortArInstanceMixin
+#   extend CohortArClassMixin
+#   # Many validations are handled by the redhill schema_validations plugin.
+#   has_many :log_items, :as => :item, :dependent => :destroy
+#   
+#   def self.create_auto_tag(reason = 'Import')
+#     Tag.create(:tag => "Autotag: #{reason} - #{Time.now.to_s(:long)}", :parent => self.get_autotag_root_tag)
+#   end
+# 
+#   def self.get_special_root_tag
+#     self.find(:first, :conditions => ['tag = ? and parent_id is null','Special'])
+#   end
+# 
+#   def self.get_uncategorized_root_tag
+#     self.find(:first, :conditions => ['tag = ? and parent_id is null','Uncategorized'])
+#   end
+# 
+#   def self.get_autotag_root_tag
+#     self.find(:first, :conditions => ['tag = ? and parent_id =?','Autotags',self.get_special_root_tag.id])
+#   end
+# 
+#   def name_for_display
+#     self.hierarchical_title
+#   end
+# 
+#   def self.select_options
+#     tree = Tag.find(:all, :include => [ :children ], :order => :position)
+#     options = [['-- root tag--',nil]]
+#     self.recurse_for_select_options(tree,nil,0,options)
+#     return options
+#   end
+# 
+# 
+# 
+#   def self.recurse_for_select_options(tree,parent_id,depth,options)
+#     if parent_id == nil
+#       depth = 0
+#     else
+#       depth += 1
+#     end
+#     tree.each do|node|
+#       if node.parent_id == parent_id
+#         options << [('_' * (depth * 2)).to_s + node.tag, node.id]
+#           unless node.children.empty?        
+#             self.recurse_for_select_options(tree,node.id,depth,options) 
+#           end
+#       end
+#     end
+#   end

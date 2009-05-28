@@ -50,6 +50,6 @@ Once you've done that you can run the server with
 
 After you know the server will actually run you can run the tests with 
 
-    script/autospec
+    spec spec -O spec/spec.opts
 
 I make every attempt to leave every commit passing or pending all tests. Failure is not permitted. As a result if you encounter any errors after a fresh <tt>git pull</tt> then please message me or log an issue in the [github issue tracker](http://github.com/rkneufeld/acts_as_freetaggable/issues "Acts as Freetaggable - Issue Tracker") for the project
