@@ -19,7 +19,7 @@ class Tag < ActiveRecord::Base
     self.removable
   end
 
-  def hierarchical_title
+  def hierarchical_title #may also need #name_for_display
     (ancestors.map(&:title) << self.title).join(' -> ')
   end
 
@@ -71,26 +71,9 @@ end
 #   end
 #
 #   def self.select_options
-#     tree = Tag.find(:all, :include => [ :children ], :order => :position)
-#     options = [['-- root tag--',nil]]
-#     self.recurse_for_select_options(tree,nil,0,options)
-#     return options
+#      #YAGNI?
 #   end
 #
-#
-#
 #   def self.recurse_for_select_options(tree,parent_id,depth,options)
-#     if parent_id == nil
-#       depth = 0
-#     else
-#       depth += 1
-#     end
-#     tree.each do|node|
-#       if node.parent_id == parent_id
-#         options << [('_' * (depth * 2)).to_s + node.tag, node.id]
-#           unless node.children.empty?
-#             self.recurse_for_select_options(tree,node.id,depth,options)
-#           end
-#       end
-#     end
+#      #YAGNI?
 #   end
