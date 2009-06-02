@@ -1,3 +1,17 @@
+begin
+  require File.dirname(__FILE__) + '/../../../../spec/spec_helper'
+rescue LoadError
+  puts "You need to install rspec in your base app"
+  exit
+end
+
+plugin_spec_dir = File.dirname(__FILE__)
+ActiveRecord::Base.logger = Logger.new(plugin_spec_dir + "/debug.log")
+
+# This is the new helper ^^^^^^
+#  -- Not sure which one will work best
+# This is the old helper VVVVVV
+
 # This file is copied to ~/spec when you run 'ruby script/generate rspec'
 # from the project root directory.
 ENV["RAILS_ENV"] ||= 'test'
