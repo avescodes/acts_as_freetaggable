@@ -7,8 +7,9 @@ module Cohort
   
     module ClassMethods
       def acts_as_freetaggable(options={})
+        klass = self.to_s.pluralize.underscore.to_sym
         Tag.class_eval do
-          has_many_polymorphs :freetaggables, :from => [self.to_s.pluralize.underscore.to_sym], :through => :taggings
+          has_many_polymorphs :freetaggables, :from => [klass], :through => :taggings
         end
       end
     end
