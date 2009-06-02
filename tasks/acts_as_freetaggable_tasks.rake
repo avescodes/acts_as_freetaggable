@@ -12,6 +12,7 @@ namespace :freetaggable do
       else
         puts " Symlinked #{plugin_path} to #{target}"
         target.make_symlink(plugin_path)  
+      end
     end
   end
   desc "Copy migrations from the ActsAsFreetaggable plugin."
