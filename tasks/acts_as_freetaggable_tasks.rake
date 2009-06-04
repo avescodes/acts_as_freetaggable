@@ -29,4 +29,9 @@ namespace :freetaggable do
       puts " Copied \"#{migration}\" to #{new_path}"
     end
   end
+
+  desc "Test the ActsAsFreetaggable plugin. Must have blank Comment and Contact models"
+  task :spec do
+    `spec -O #{File.dirname(__FILE__)}/../spec/spec.opts #{File.dirname(__FILE__)}/../spec/**/*_spec.rb`
+  end
 end
