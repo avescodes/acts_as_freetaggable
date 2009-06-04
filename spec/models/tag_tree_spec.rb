@@ -44,7 +44,7 @@ describe Tag do
 
   context "tree node" do
     before(:each) do
-      @tag = Tag.create
+      @tag = Tag.create(VALID_ATTRIBUTES)
     end
     subject { @tag }
     it { should respond_to :children }
