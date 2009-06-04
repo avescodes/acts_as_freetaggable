@@ -1,3 +1,4 @@
+require 'ftools'
 # Install hook code here
 puts "Installing ActsAsFreetaggable...\n"
 
