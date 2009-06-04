@@ -31,7 +31,7 @@ namespace :freetaggable do
   end
 
   desc "Test the ActsAsFreetaggable plugin. Must have blank Comment and Contact models"
-  task :spec do
-    `spec -O #{File.dirname(__FILE__)}/../spec/spec.opts #{File.dirname(__FILE__)}/../spec/**/*_spec.rb`
+  task :specs do
+    puts `spec -O #{File.dirname(__FILE__)}/../spec/spec.opts #{File.dirname(__FILE__)}/../spec/**/*_spec.rb`
   end
 end
