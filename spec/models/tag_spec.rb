@@ -31,7 +31,7 @@ describe Tag do
     subject { @object }
     it { should respond_to :tags }
     it "should be able to have tags" do
-      lambda { @object.tags << Tag.create }.should change(@object.tags, :count).by(1)
+      lambda { @object.tags << Tag.create(:title => "title", :description => "description" }.should change(@object.tags, :count).by(1)
     end
     it "should update when a tag is destroyed" do
       @root.destroy

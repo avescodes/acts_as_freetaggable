@@ -1,6 +1,7 @@
 require File.join(File.dirname(__FILE__), "/../spec_helper")
 
 describe Tag do
+  VALID_ATTRIBUTES = { :title => "title", :description => "description" }
   context "tree" do
     fixtures :tags
 
@@ -9,9 +10,9 @@ describe Tag do
 
     it "should tidy up orphaned objects" do
       # Note #delete does _NOT_ trigger children deletion
-      parent = Tag.create!
-      child_id = parent.children.create!.id
-      grand_child_id = parent.children[0].children.create!.id
+      parent = Tag.create! VALID_ATTRIBUTES
+      child_id = parent.children.create!(VALID_ATTRIBUTES).id
+      grand_child_id = parent.children[0].children.create!(VALID_ATTRIBUTES).id
       parent.destroy
       lambda { Tag.find child_id }.should raise_error
       lambda { Tag.find grand_child_id }.should raise_error
@@ -61,7 +62,7 @@ describe Tag do
       @tag.parent.should == @tag2
     end
     it "can leave its parent and become root" do
-      @tag2 = Tag.create
+      @tag2 = Tag.create(VALID_ATTRIBUTES)
       @tag.parent = @tag2
       @tag.parent = nil
       @tag.save
@@ -70,7 +71,7 @@ describe Tag do
     end
     it "will be valid when #new'd and assigned own parent (but not yet saved)" do
       # Bug or feature? Can't assign parent properly unless id created
-      @tag = Tag.new
+      @tag = Tag.new(VALID_ATTRIBUTES)
       @tag.parent = @tag
       @tag.should be_valid
     end
