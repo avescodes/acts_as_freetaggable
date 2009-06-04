@@ -1,7 +1,7 @@
 begin
   require File.dirname(__FILE__) + '/../../../../spec/spec_helper'
 rescue LoadError
-  puts "You need to install rspec in your base app"
+  puts "You need to install rspec in your base app. This is a dumb checker however; it is just requiring spec/spec_helper.rb"
   exit
 end
 
@@ -57,6 +57,6 @@ Spec::Runner.configure do |config|
   # config.mock_with :rr
   #
   # == Notes
-  # 
+  #
   # For more information take a look at Spec::Runner::Configuration and Spec::Runner
 end
