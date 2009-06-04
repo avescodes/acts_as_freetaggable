@@ -1,0 +1,796 @@
+# Logfile created on Thu Jun 04 14:53:35 -0500 2009 by /
+  [4;36;1mTag Load (0.9ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Load (0.7ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Load (0.7ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Create (0.3ms)[0m   [0mINSERT INTO "tags" ("position", "created_at", "title", "updated_at", "children_count", "parent_id", "removable", "descendants_count", "description", "ancestors_count", "hidden") VALUES(3, '2009-06-04 19:53:35', 'title', '2009-06-04 19:53:35', NULL, NULL, 't', NULL, 'description', NULL, NULL)[0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408320) ORDER BY position[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mUPDATE tags SET ancestors_count=0, descendants_count=0 WHERE id=1014408320[0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Load (0.8ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL AND (hidden IS NULL) ) ORDER BY position[0m
+  [4;36;1mTag Load (0.8ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mTag Load (0.8ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mTag Create (0.2ms)[0m   [0;1mINSERT INTO "tags" ("position", "created_at", "title", "updated_at", "children_count", "parent_id", "removable", "descendants_count", "description", "ancestors_count", "hidden") VALUES(3, '2009-06-04 19:53:35', 'title', '2009-06-04 19:53:35', NULL, NULL, 't', NULL, 'description', NULL, NULL)[0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408320) ORDER BY position[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mUPDATE tags SET ancestors_count=0, descendants_count=0 WHERE id=1014408320[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id = 1014408320) [0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("position", "created_at", "title", "updated_at", "children_count", "parent_id", "removable", "descendants_count", "description", "ancestors_count", "hidden") VALUES(1, '2009-06-04 19:53:35', 'title', '2009-06-04 19:53:35', NULL, 1014408320, 't', NULL, 'description', NULL, NULL)[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "children_count" = COALESCE("children_count", 0) + 1 WHERE ("id" = 1014408320) [0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408320) ORDER BY position[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408321) ORDER BY position[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mUPDATE tags SET ancestors_count=0, descendants_count=1 WHERE id=1014408320[0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mUPDATE tags SET ancestors_count=1, descendants_count=0 WHERE id=1014408321[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id = 1014408321) [0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("position", "created_at", "title", "updated_at", "children_count", "parent_id", "removable", "descendants_count", "description", "ancestors_count", "hidden") VALUES(1, '2009-06-04 19:53:36', 'title', '2009-06-04 19:53:36', NULL, 1014408321, 't', NULL, 'description', NULL, NULL)[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "children_count" = COALESCE("children_count", 0) + 1 WHERE ("id" = 1014408321) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408320) ORDER BY position[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408321) ORDER BY position[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408322) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408322) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408322) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408322) ORDER BY position[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mUPDATE tags SET ancestors_count=0, descendants_count=2 WHERE id=1014408320[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408322) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408322) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408322) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408322) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408322) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408322) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mUPDATE tags SET ancestors_count=1, descendants_count=1 WHERE id=1014408321[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mUPDATE tags SET ancestors_count=2, descendants_count=0 WHERE id=1014408322[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "children_count" = COALESCE("children_count", 0) - 1 WHERE ("id" = 1014408320) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408322) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "children_count" = COALESCE("children_count", 0) - 1 WHERE ("id" = 1014408321) [0m
+  [4;36;1mTagging Load (0.1ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 1014408322) [0m
+  [4;35;1mTag Destroy (0.1ms)[0m   [0mDELETE FROM "tags" WHERE "id" = 1014408322[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408320) ORDER BY position[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408321) ORDER BY position[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mUPDATE tags SET ancestors_count=0, descendants_count=1 WHERE id=1014408320[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mUPDATE tags SET ancestors_count=1, descendants_count=0 WHERE id=1014408321[0m
+  [4;35;1mTagging Load (0.1ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 1014408321) [0m
+  [4;36;1mTag Destroy (0.1ms)[0m   [0;1mDELETE FROM "tags" WHERE "id" = 1014408321[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408320) ORDER BY position[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mUPDATE tags SET ancestors_count=0, descendants_count=0 WHERE id=1014408320[0m
+  [4;35;1mTagging Load (0.1ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 1014408320) [0m
+  [4;36;1mTag Destroy (0.1ms)[0m   [0;1mDELETE FROM "tags" WHERE "id" = 1014408320[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408320) [0m
+  [4;36;1mTag Load (0.1ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408321) [0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408322) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 535446567) ORDER BY position[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".parent_id = 535446567) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".parent_id = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 997227423) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;36;1mTag Update (0.2ms)[0m   [0;1mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "parent_id" = 291909616 WHERE "id" = 997227423[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 535446567) ORDER BY position[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mUPDATE tags SET ancestors_count=0, descendants_count=0 WHERE id=535446567[0m
+  [4;35;1mTag Load (0.7ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL AND (hidden IS NULL) ) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.8ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 997227423) ORDER BY position[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Update (0.1ms)[0m   [0;1mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 2 WHERE "id" = 1014408319[0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408319) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 3 WHERE "id" = 971201083[0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 300960978) ORDER BY position[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 535446567) ORDER BY position[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.8ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".parent_id = 291909616) [0m
+  [4;36;1mTag Load (0.8ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".parent_id = 291909616) [0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408319) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 300960978) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mContact Create (0.2ms)[0m   [0mINSERT INTO "contacts" ("created_at", "updated_at") VALUES('2009-06-04 19:53:36', '2009-06-04 19:53:36')[0m
+  [4;36;1mTagging Create (0.2ms)[0m   [0;1mINSERT INTO "taggings" ("created_at", "tag_id", "updated_at", "freetaggable_id", "freetaggable_type") VALUES('2009-06-04 19:53:36', 291909616, '2009-06-04 19:53:36', 1, 'Contact')[0m
+  [4;35;1mContact Create (0.2ms)[0m   [0mINSERT INTO "contacts" ("created_at", "updated_at") VALUES('2009-06-04 19:53:36', '2009-06-04 19:53:36')[0m
+  [4;36;1mTagging Create (0.1ms)[0m   [0;1mINSERT INTO "taggings" ("created_at", "tag_id", "updated_at", "freetaggable_id", "freetaggable_type") VALUES('2009-06-04 19:53:36', 291909616, '2009-06-04 19:53:36', 1, 'Contact')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".freetaggable_id = 1) AND ("taggings".freetaggable_type = 'Contact')) [0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mTag Create (0.1ms)[0m   [0mINSERT INTO "tags" ("position", "created_at", "title", "updated_at", "children_count", "parent_id", "removable", "descendants_count", "description", "ancestors_count", "hidden") VALUES(3, '2009-06-04 19:53:36', 'title', '2009-06-04 19:53:36', NULL, NULL, 't', NULL, 'description', NULL, NULL)[0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408320) ORDER BY position[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mUPDATE tags SET ancestors_count=0, descendants_count=0 WHERE id=1014408320[0m
+  [4;36;1mTagging Create (0.1ms)[0m   [0;1mINSERT INTO "taggings" ("created_at", "tag_id", "updated_at", "freetaggable_id", "freetaggable_type") VALUES('2009-06-04 19:53:36', 1014408320, '2009-06-04 19:53:36', 1, 'Contact')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".freetaggable_id = 1) AND ("taggings".freetaggable_type = 'Contact')) [0m
+  [4;36;1mContact Create (0.2ms)[0m   [0;1mINSERT INTO "contacts" ("created_at", "updated_at") VALUES('2009-06-04 19:53:36', '2009-06-04 19:53:36')[0m
+  [4;35;1mTagging Create (0.1ms)[0m   [0mINSERT INTO "taggings" ("created_at", "tag_id", "updated_at", "freetaggable_id", "freetaggable_type") VALUES('2009-06-04 19:53:36', 291909616, '2009-06-04 19:53:36', 1, 'Contact')[0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "children_count" = COALESCE("children_count", 0) - 1 WHERE ("id" = 291909616) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408319) ORDER BY position[0m
+  [4;35;1mTagging Load (0.1ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 1014408319) [0m
+  [4;36;1mTag Destroy (0.1ms)[0m   [0;1mDELETE FROM "tags" WHERE "id" = 1014408319[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 300960978) ORDER BY position[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mUPDATE tags SET ancestors_count=0, descendants_count=2 WHERE id=291909616[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mUPDATE tags SET ancestors_count=1, descendants_count=1 WHERE id=971201083[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mUPDATE tags SET ancestors_count=2, descendants_count=0 WHERE id=300960978[0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "children_count" = COALESCE("children_count", 0) - 1 WHERE ("id" = 291909616) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Update (0.1ms)[0m   [0;1mUPDATE "tags" SET "children_count" = COALESCE("children_count", 0) - 1 WHERE ("id" = 971201083) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 300960978) ORDER BY position[0m
+  [4;36;1mTagging Load (0.1ms)[0m   [0;1mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 300960978) [0m
+  [4;35;1mTag Destroy (0.1ms)[0m   [0mDELETE FROM "tags" WHERE "id" = 300960978[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mUPDATE tags SET ancestors_count=0, descendants_count=1 WHERE id=291909616[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mUPDATE tags SET ancestors_count=1, descendants_count=0 WHERE id=971201083[0m
+  [4;35;1mTagging Load (0.1ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 971201083) [0m
+  [4;36;1mTag Destroy (0.1ms)[0m   [0;1mDELETE FROM "tags" WHERE "id" = 971201083[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mUPDATE tags SET ancestors_count=0, descendants_count=0 WHERE id=291909616[0m
+  [4;35;1mTagging Load (0.2ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".tag_id = 291909616) [0m
+  [4;36;1mTagging Destroy (0.1ms)[0m   [0;1mDELETE FROM "taggings" WHERE "id" = 1[0m
+  [4;35;1mTagging Destroy (0.1ms)[0m   [0mDELETE FROM "taggings" WHERE "id" = 1[0m
+  [4;36;1mTag Destroy (0.1ms)[0m   [0;1mDELETE FROM "tags" WHERE "id" = 291909616[0m
+  [4;35;1mTag Load (0.1ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".freetaggable_id = 1) AND ("taggings".freetaggable_type = 'Contact')) [0m
+  [4;35;1mContact Create (0.2ms)[0m   [0mINSERT INTO "contacts" ("created_at", "updated_at") VALUES('2009-06-04 19:53:36', '2009-06-04 19:53:36')[0m
+  [4;36;1mTagging Create (0.1ms)[0m   [0;1mINSERT INTO "taggings" ("created_at", "tag_id", "updated_at", "freetaggable_id", "freetaggable_type") VALUES('2009-06-04 19:53:36', 291909616, '2009-06-04 19:53:36', 1, 'Contact')[0m
+  [4;35;1mTagging Load (0.2ms)[0m   [0mSELECT * FROM "taggings" WHERE ("taggings".freetaggable_id = 1 AND "taggings".freetaggable_type = 'Contact') [0m
+  [4;36;1mTagging Destroy (0.1ms)[0m   [0;1mDELETE FROM "taggings" WHERE "id" = 1[0m
+  [4;35;1mContact Destroy (0.1ms)[0m   [0mDELETE FROM "contacts" WHERE "id" = 1[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mTag Load (0.7ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408319) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Update (0.2ms)[0m   [0;1mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 2 WHERE "id" = 1014408319[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 300960978) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 1 WHERE "id" = 971201083[0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.7ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408319) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Update (0.2ms)[0m   [0mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 2 WHERE "id" = 1014408319[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 300960978) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Update (0.1ms)[0m   [0;1mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 1 WHERE "id" = 971201083[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.7ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 300960978) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Update (0.2ms)[0m   [0;1mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 1 WHERE "id" = 971201083[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408319) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Update (0.1ms)[0m   [0;1mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 2 WHERE "id" = 1014408319[0m
+  [4;35;1mTag Load (0.7ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.8ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 300960978) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Update (0.2ms)[0m   [0mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 1 WHERE "id" = 971201083[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408319) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 2 WHERE "id" = 1014408319[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL AND (hidden IS NULL) ) ORDER BY position[0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408319) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Update (0.2ms)[0m   [0;1mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 2 WHERE "id" = 1014408319[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 300960978) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 1 WHERE "id" = 971201083[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408319) ORDER BY position[0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;36;1mTag Update (0.1ms)[0m   [0;1mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 1 WHERE "id" = 1014408319[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 300960978) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 2 WHERE "id" = 971201083[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL AND (hidden IS NULL) ) ORDER BY position[0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE (parent_id IS NULL AND (hidden IS NULL) ) ORDER BY position[0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL AND (hidden IS NULL) ) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;35;1mTag Update (0.2ms)[0m   [0mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 1 WHERE "id" = 535446567[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 2 WHERE "id" = 291909616[0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 535446567) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".parent_id = 535446567) [0m
+  [4;35;1mTag Load (0.8ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 535446567) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 997227423) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;35;1mTag Update (0.2ms)[0m   [0mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "parent_id" = 291909616 WHERE "id" = 997227423[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 535446567) ORDER BY position[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mUPDATE tags SET ancestors_count=0, descendants_count=0 WHERE id=535446567[0m
+  [4;36;1mTag Load (0.6ms)[0m   [0;1mSELECT * FROM "tags" WHERE (parent_id IS NULL AND (hidden IS NULL) ) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 997227423) ORDER BY position[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Update (0.1ms)[0m   [0mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 2 WHERE "id" = 1014408319[0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 1014408319) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Update (0.1ms)[0m   [0;1mUPDATE "tags" SET "updated_at" = '2009-06-04 19:53:36', "position" = 3 WHERE "id" = 971201083[0m
+  [4;35;1mTag Load (0.6ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 971201083) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 300960978) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 300960978) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags".parent_id = 535446567) ORDER BY position[0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 535446567) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 535446567) ORDER BY position[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "tags" WHERE ("tags".parent_id = 535446567) [0m
+  [4;36;1mTag Load (0.7ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags".parent_id = 291909616) ORDER BY position[0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 997227423) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 1014408319) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 971201083) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT * FROM "tags" WHERE ("tags"."id" = 291909616) [0m
