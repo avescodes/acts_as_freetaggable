@@ -45,7 +45,9 @@ describe Tag do
   end
 
   describe "validations" do
-
+    it { should validate_presence_of :title }
+    it { should_validate_length_of :title, :maximum => 200 }
+    it { should_validate_length_of :description, :maximum => 1000 }
   end
 
 
