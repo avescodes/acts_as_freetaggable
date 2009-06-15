@@ -1,4 +1,5 @@
 class Tag < ActiveRecord::Base
+  unloadable
   has_many :taggings, :dependent => :destroy
 
   validates_presence_of :title
